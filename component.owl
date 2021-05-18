@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#"
+     xml:base="http://www.semanticweb.org/tebbec/ontologies/2021/4/component"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component/1.0"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant/1.0"/>
+        <rdfs:comment xml:lang="en">lowest ontology describing components based on production plant ontology</rdfs:comment>
+    </owl:Ontology>
+</rdf:RDF>
