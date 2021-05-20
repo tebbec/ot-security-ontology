@@ -11,4 +11,321 @@
         <owl:imports rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security/1.0"/>
         <rdfs:comment xml:lang="en">lower ontology describing production plant based on ot security ontology</rdfs:comment>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#based_on -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#based_on">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#configuration"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#concept"/>
+        <rdfs:comment xml:lang="de">basiert_auf</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#connects -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#connects">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#network"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#component"/>
+        <rdfs:comment xml:lang="de">verbindet</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#contains_ext -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#contains_ext">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#network"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#external_connection"/>
+        <rdfs:comment xml:lang="de">enthält_Ext</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#contains_ext_con -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#contains_ext_con">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#architecture"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#external_connection"/>
+        <rdfs:comment xml:lang="de">enthält_Ext_Ver</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#contains_inf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#contains_inf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#process"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#information"/>
+        <rdfs:comment xml:lang="de">enthält_Inf</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#contains_info -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#contains_info">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#component"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#information"/>
+        <rdfs:comment xml:lang="de">enthält_Info</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#has_comp -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#has_comp">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#network"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#component"/>
+        <rdfs:comment xml:lang="de">hast_Komp</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#has_compo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#has_compo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#(base)_function"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#component"/>
+        <rdfs:comment xml:lang="de">hat_Kompo</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#has_conf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#has_conf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#network"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#configuration"/>
+        <rdfs:comment xml:lang="de">hat_Konfi</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#has_confi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#has_confi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#process"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#configuration"/>
+        <rdfs:comment xml:lang="de">hat_Konf</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#has_config -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#has_config">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#component"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#configuration"/>
+        <rdfs:comment xml:lang="de">hat_Konfig</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#part_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#part_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#component"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#component"/>
+        <rdfs:comment xml:lang="de">Teil_von</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#shows_comp -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#shows_comp">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#architecture"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#component"/>
+        <rdfs:comment xml:lang="de">zeigt_Kompo</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#shows_net -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#shows_net">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#architecture"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#network"/>
+        <rdfs:comment xml:lang="de">zeigt_Netz</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#supports_pro -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#supports_pro">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#(base)_function"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#process"/>
+        <rdfs:comment xml:lang="de">unterstützt_pro</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#supports_proce -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#supports_proce">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#network"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#process"/>
+        <rdfs:comment xml:lang="de">unterstützt_Proz</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#supports_process -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#supports_process">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#component"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#process"/>
+        <rdfs:comment xml:lang="de">unterstütz_prozess</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#transports -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#transports">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#network"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#information"/>
+        <rdfs:comment xml:lang="de">transportiert</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#approach -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#approach">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#concept"/>
+        <rdfs:comment xml:lang="de">Vorgehen</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#architecture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#architecture">
+        <rdfs:comment xml:lang="de">Architektur</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#component -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#component">
+        <rdfs:comment xml:lang="de">Komponente</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#concept -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#concept">
+        <rdfs:comment xml:lang="de">Konzept</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#configuration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#configuration">
+        <rdfs:comment xml:lang="de">Konfiguration</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#external_connection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#external_connection">
+        <rdfs:comment xml:lang="de">Externe_Verbindung</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#logical_connection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#logical_connection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#external_connection"/>
+        <rdfs:comment xml:lang="de">Logische_Verbindung</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#network -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#network">
+        <rdfs:comment xml:lang="de">Netzwerk</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#other -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#other">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#concept"/>
+        <rdfs:comment xml:lang="de">Andere</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#performance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#performance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#concept"/>
+        <rdfs:comment xml:lang="de">Leistung</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#physical_connection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#physical_connection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#external_connection"/>
+        <rdfs:comment xml:lang="de">Physikaliche_Verbindung</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#safety -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#safety">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#concept"/>
+        <rdfs:comment xml:lang="de">Funktionale_Sicherheit</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#(base)_function -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#(base)_function">
+        <rdfs:comment xml:lang="de">(Grundlegende)_Funktion</rdfs:comment>
+    </owl:Class>
 </rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

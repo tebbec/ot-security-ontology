@@ -11,4 +11,520 @@
         <owl:imports rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant/1.0"/>
         <rdfs:comment xml:lang="en">lowest ontology describing components based on production plant ontology</rdfs:comment>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#accesses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#accesses">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#storage_management"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#storage"/>
+        <rdfs:comment xml:lang="de">greift_zu_auf</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#connects -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#connects">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#wiring"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#physical"/>
+        <rdfs:comment xml:lang="de">verbindet</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#describes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#describes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#component_type"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#component"/>
+        <rdfs:comment xml:lang="de">beschreibt</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#drives -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#drives">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#driver"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#hardware"/>
+        <rdfs:comment xml:lang="de">betreibt</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#has_measure -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#has_measure">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#component"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/information_security#measure"/>
+        <rdfs:comment xml:lang="de">hat_Schutzmaßnahme</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#has_supp_per -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#has_supp_per">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#support_period"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#component"/>
+        <rdfs:comment xml:lang="de">hat_Supp_Per</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#has_ven -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#has_ven">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#component"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#vendor"/>
+        <rdfs:comment xml:lang="de">hat_Hersteller</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#needs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#needs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#logical"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#login_details"/>
+        <rdfs:comment xml:lang="de">benötigt</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#processes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#processes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#software"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#data"/>
+        <rdfs:comment xml:lang="de">verarbeitet</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#produces -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#produces">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#component"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#function"/>
+        <rdfs:comment xml:lang="de">produziert</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#stores -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#stores">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#storage_management"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#data"/>
+        <rdfs:comment xml:lang="de">speichert</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#transports -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#transports">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#protocol"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#data"/>
+        <rdfs:comment xml:lang="de">transportiert</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#uses_lib -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#uses_lib">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#software"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#library"/>
+        <rdfs:comment xml:lang="de">benutzt_Bib</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#uses_prot -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#uses_prot">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#interface"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#protocol"/>
+        <rdfs:comment xml:lang="de">benutzt_Prot</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#uses_proto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#uses_proto">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#service"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#protocol"/>
+        <rdfs:comment xml:lang="de">benutzt_Proto</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#uses_storMmgt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#uses_storMmgt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#software"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#storage_management"/>
+        <rdfs:comment xml:lang="de">benutzt_SpeiMmgt</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#part_of_cert/OS -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#part_of_cert/OS">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#certificate"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#OS/firmware"/>
+        <rdfs:comment xml:lang="de">Teil_von_Zert/OS</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#part_of_driv/OS -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#part_of_driv/OS">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#driver"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#OS/firmware"/>
+        <rdfs:comment xml:lang="de">Teil_von_Trei/OS</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#part_of_ker/OS -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#part_of_ker/OS">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#kernel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#OS/firmware"/>
+        <rdfs:comment xml:lang="de">Teil_von_Ker/OS</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#part_of_lib/os -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#part_of_lib/os">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#library"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#OS/firmware"/>
+        <rdfs:comment xml:lang="de">Teil_von_Bib/OS</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#part_of_reg/os -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#part_of_reg/os">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#registry"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#OS/firmware"/>
+        <rdfs:comment xml:lang="de">Teil_von_Reg/OS</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#part_of_storMmgt/OS -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#part_of_storMmgt/OS">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#storage_management"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#OS/firmware"/>
+        <rdfs:comment xml:lang="de">Teil_von_SpeiMmgt/OS</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#MMU -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#MMU">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#storage_management"/>
+        <rdfs:comment xml:lang="de">MMU</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#application -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#application">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#software"/>
+        <rdfs:comment xml:lang="de">Anwendung</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#certificate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#certificate">
+        <rdfs:comment xml:lang="de">Zertifikat</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#component_type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#component_type">
+        <rdfs:comment xml:lang="de">Komponententyp</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#data">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#logical"/>
+        <rdfs:comment xml:lang="de">Daten</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#display -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#display">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#physical"/>
+        <rdfs:comment xml:lang="de">Display</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#driver -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#driver">
+        <rdfs:comment xml:lang="de">Treiber</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#file_system -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#file_system">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#storage_management"/>
+        <rdfs:comment xml:lang="de">Dateisystem</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#function -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#function">
+        <rdfs:comment xml:lang="de">Funktion</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#hardware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#hardware">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#physical"/>
+        <rdfs:comment xml:lang="de">Hardware</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#input_device -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#input_device">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#physical"/>
+        <rdfs:comment xml:lang="de">Eingabegerät</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#interface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#interface">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#physical"/>
+        <rdfs:comment xml:lang="de">Schnittstelle</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#kernel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#kernel">
+        <rdfs:comment xml:lang="de">Kernel</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#library -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#library">
+        <rdfs:comment xml:lang="de">Bibliothek</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#logical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#logical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#component"/>
+        <rdfs:comment xml:lang="de">logisch</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#login_details -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#login_details">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#data"/>
+        <rdfs:comment xml:lang="de">Zugangsdaten</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#other -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#other">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#physical"/>
+        <rdfs:comment xml:lang="de">Andere</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#permanent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#permanent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#storage"/>
+        <rdfs:comment xml:lang="de">Permanent</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#physical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#physical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#component"/>
+        <rdfs:comment xml:lang="de">physisch</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#processor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#processor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#physical"/>
+        <rdfs:comment xml:lang="de">Prozessor</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#protocol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#protocol">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#logical"/>
+        <rdfs:comment xml:lang="de">Protokoll</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#registry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#registry">
+        <rdfs:comment xml:lang="de">Registry</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#application"/>
+        <rdfs:comment xml:lang="de">Dienst</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#software -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#software">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#logical"/>
+        <rdfs:comment xml:lang="de">Software</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#storage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#storage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#physical"/>
+        <rdfs:comment xml:lang="de">Speicher</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#storage_management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#storage_management">
+        <rdfs:comment xml:lang="de">Speichermanagement</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#support_period -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#support_period">
+        <rdfs:comment xml:lang="de">Support-Periode</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#vendor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#vendor">
+        <rdfs:comment xml:lang="de">Hersteller</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#volatile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#volatile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#storage"/>
+        <rdfs:comment xml:lang="de">Flüchtig</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#wiring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#wiring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#physical"/>
+        <rdfs:comment xml:lang="de">Verkabelung</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#OS/firmware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#OS/firmware">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#software"/>
+        <rdfs:comment xml:lang="de">OS/Firmware</rdfs:comment>
+    </owl:Class>
 </rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

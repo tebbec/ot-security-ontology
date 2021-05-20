@@ -11,4 +11,547 @@
         <owl:imports rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/information_security/1.0"/>
         <rdfs:comment xml:lang="en">middle ontology describing ot security based on information security ontology</rdfs:comment>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#causes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#causes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/information_security#measure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#cost"/>
+        <rdfs:comment xml:lang="de">verursacht</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#for -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#for">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#risk"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/information_security#asset"/>
+        <rdfs:comment xml:lang="de">für</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#has_cap -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#has_cap">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/information_security#threat_source"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#possibility"/>
+        <rdfs:comment xml:lang="de">hat_fähi</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#has_et -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#has_et">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/information_security#enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#enterprise_targets"/>
+        <rdfs:comment xml:lang="de">hast_Uv</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#has_exp -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#has_exp">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/information_security#asset"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#exposure"/>
+        <rdfs:comment xml:lang="de">hat_Expo</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#has_met -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#has_met">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/information_security#measure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#metric"/>
+        <rdfs:comment xml:lang="de">hat_Metrik</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#has_pos -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#has_pos">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/information_security#asset"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#position"/>
+        <rdfs:comment xml:lang="de">hat_Posi</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#has_posib -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#has_posib">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/information_security#threat"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#possibility"/>
+        <rdfs:comment xml:lang="de">hat_wahrs</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#has_rt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#has_rt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/information_security#resource"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#resource_type"/>
+        <rdfs:comment xml:lang="de">hat_RT</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#has_sec_prop -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#has_sec_prop">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/information_security#protection_requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#security_property"/>
+        <rdfs:comment xml:lang="de">hat_schutzziel</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#has_stat -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#has_stat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/information_security#vulnerability"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#status"/>
+        <rdfs:comment xml:lang="de">hat_status</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#has_thr_cons -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#has_thr_cons">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/information_security#threat"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#threat_consequence"/>
+        <rdfs:comment xml:lang="de">hat_Bed_Kon</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#has_thr_source_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#has_thr_source_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/information_security#threat_source"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#threat_source_type"/>
+        <rdfs:comment xml:lang="de">hat_Bed_Quell_Typ</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#has_uc -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#has_uc">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/information_security#asset"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#use_case"/>
+        <rdfs:comment xml:lang="de">hat_Uc</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#has_val -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#has_val">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/information_security#asset"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#value"/>
+        <rdfs:comment xml:lang="de">hat_Wert</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#has_vec -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#has_vec">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/information_security#threat"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#threat_vector"/>
+        <rdfs:comment xml:lang="de">hat_Vek</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#has_vul_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#has_vul_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/information_security#vulnerability"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#vulnerability_type"/>
+        <rdfs:comment xml:lang="de">hat_schwach_typ</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#influences -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#influences">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#regulation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/information_security#enterprise"/>
+        <rdfs:comment xml:lang="de">beeinflusst</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#influences_ent_req -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#influences_ent_req">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#environment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#enterprise_targets"/>
+        <rdfs:comment xml:lang="de">beeinflusst_unt_vorg</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#influences_res -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#influences_res">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#environment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/information_security#resource"/>
+        <rdfs:comment xml:lang="de">beeinflusst_Ress</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#means -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#means">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/information_security#threat"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#risk"/>
+        <rdfs:comment xml:lang="de">bedeutet</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#points_to_plant_req -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#points_to_plant_req">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/information_security#protection_requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#requirements_to_plants"/>
+        <rdfs:comment xml:lang="de">verweist_auf_Anlagen_Anf</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#points_to_sl -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#points_to_sl">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/information_security#protection_requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#security_level"/>
+        <rdfs:comment xml:lang="de">verweist_auf_SL</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#reduces -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#reduces">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/information_security#measure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#risk"/>
+        <rdfs:comment xml:lang="de">reduziert</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#required_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#required_by">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/information_security#measure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#time"/>
+        <rdfs:comment xml:lang="de">benötigt_von</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#requires -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#requires">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/information_security#measure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#process_for_measure"/>
+        <rdfs:comment xml:lang="de">erfordert</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#warns_about -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#warns_about">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#notification"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/information_security#threat"/>
+        <rdfs:comment xml:lang="de">wanrt_über</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/information_security#resource -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/information_security#resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#threat_source_type"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#capability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#capability">
+        <rdfs:comment xml:lang="de">Fähigkeit</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#cost -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#cost">
+        <rdfs:comment xml:lang="de">Kosten</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#enterprise_targets -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#enterprise_targets">
+        <rdfs:comment xml:lang="de">Unternehmensvorgaben</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#environment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#environment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#threat_source_type"/>
+        <rdfs:comment xml:lang="de">Umgebung</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#exposure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#exposure">
+        <rdfs:comment xml:lang="de">Exponiertheit</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#human -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#human">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#resource_type"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#threat_source_type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#information -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#information">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#resource_type"/>
+        <rdfs:comment xml:lang="de">Information</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#infrastructure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#infrastructure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#resource_type"/>
+        <rdfs:comment xml:lang="de">Infrastruktur</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#metric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#metric">
+        <rdfs:comment xml:lang="de">Metrik</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#notification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#notification">
+        <rdfs:comment xml:lang="de">Benachrichtigung</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#plant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#plant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#resource_type"/>
+        <rdfs:comment xml:lang="de">Anlage</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#position -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#position">
+        <rdfs:comment xml:lang="de">Position</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#possibility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#possibility">
+        <rdfs:comment xml:lang="de">Wahrscheinlichkeit</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#process">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#resource_type"/>
+        <rdfs:comment xml:lang="de">Prozess</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#process_for_measure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#process_for_measure">
+        <rdfs:comment xml:lang="de">Prozess_für_Schutzmaßnahme</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#regulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#regulation">
+        <rdfs:comment xml:lang="de">Regulierung</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#requirements_to_plants -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#requirements_to_plants">
+        <rdfs:comment xml:lang="de">Anforderungen_an_Anlagen</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#resource_type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#resource_type">
+        <rdfs:comment xml:lang="de">Ressourcentyp</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#risk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#risk">
+        <rdfs:comment xml:lang="de">Risiko</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#security_level -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#security_level">
+        <rdfs:comment xml:lang="de">Security_Level</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#security_property -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#security_property">
+        <rdfs:comment xml:lang="de">Schutzziel</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#status -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#status">
+        <rdfs:comment xml:lang="de">Status</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#threat_consequence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#threat_consequence">
+        <rdfs:comment xml:lang="de">Bedrohungskonsequenz</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#threat_source_type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#threat_source_type">
+        <rdfs:comment xml:lang="de">Bedrohungsquellentyp</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#threat_vector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#threat_vector">
+        <rdfs:comment xml:lang="de">Bedrohungsvektor</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#time -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#time">
+        <rdfs:comment xml:lang="de">Zeit</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#use_case -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#use_case">
+        <rdfs:comment xml:lang="de">Use_Case</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#value -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#value">
+        <rdfs:comment xml:lang="de">Wert</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#vulnerability_type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#vulnerability_type">
+        <rdfs:comment xml:lang="de">Schwachstellentyp</rdfs:comment>
+    </owl:Class>
 </rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
