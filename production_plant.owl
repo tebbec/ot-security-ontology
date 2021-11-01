@@ -198,8 +198,8 @@
     <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#transports -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#transports">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#network"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#information"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/ot_security#information"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#network"/>
         <rdfs:comment xml:lang="de">transportiert</rdfs:comment>
     </owl:ObjectProperty>
     

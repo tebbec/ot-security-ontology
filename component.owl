@@ -78,8 +78,8 @@
     <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#has_supp_per -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#has_supp_per">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#support_period"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#component"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/production_plant#component"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#support_period"/>
         <rdfs:comment xml:lang="de">hat_Supp_Per</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -158,8 +158,8 @@
     <!-- http://www.semanticweb.org/tebbec/ontologies/2021/4/component#uses_prot -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#uses_prot">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#interface"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#protocol"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#protocol"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tebbec/ontologies/2021/4/component#interface"/>
         <rdfs:comment xml:lang="de">benutzt_Prot</rdfs:comment>
     </owl:ObjectProperty>
     
